@@ -2450,3 +2450,124 @@ button {
     min-height: 210px;
   }
 }
+
+/* Miniatura simples das apresentações */
+
+.project-card__visual.project-card__visual--document {
+  display: flex;
+  min-height: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+  padding: 26px 20px;
+  border: 1px solid #d9dee8;
+  border-top: 1px solid #d9dee8;
+  border-radius: 14px;
+  background: #f7f8fa;
+  color: #10203a;
+}
+
+.project-document {
+  position: relative;
+  width: 132px;
+  aspect-ratio: 4 / 5;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 12px;
+  padding: 50px 20px 20px;
+  overflow: visible;
+  border: 1px solid #aeb7c7;
+  border-radius: 6px;
+  background: #ffffff;
+  clip-path: polygon(0 0, calc(100% - 34px) 0, 100% 34px, 100% 100%, 0 100%);
+  transition: transform .2s ease, border-color .2s ease;
+}
+
+.project-document::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  width: 34px;
+  height: 34px;
+  border-bottom: 1px solid #aeb7c7;
+  border-left: 1px solid #aeb7c7;
+  background: #edf2fb;
+}
+
+.project-document__line {
+  display: block;
+  width: 78%;
+  height: 3px;
+  border-radius: 2px;
+  background: #3569d4;
+}
+
+.project-document__line--long {
+  width: 100%;
+}
+
+.project-document__line--short {
+  width: 58%;
+}
+
+.project-document__badge {
+  position: absolute;
+  right: -8px;
+  bottom: 16px;
+  padding: 5px 8px;
+  border-radius: 3px;
+  background: #3569d4;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.72rem;
+  line-height: 1;
+  letter-spacing: 0.04em;
+}
+
+.project-document__meta {
+  display: grid;
+  justify-items: center;
+  gap: 5px;
+  text-align: center;
+}
+
+.project-document__meta strong {
+  color: #10203a;
+  font-family: 'Space Grotesk', 'Inter', sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.25;
+}
+
+.project-document__meta span {
+  color: #647087;
+  font-size: 0.72rem;
+  line-height: 1.35;
+}
+
+.project-card--link:hover .project-document,
+.project-card--link:focus-visible .project-document {
+  transform: translateY(-2px);
+  border-color: #7f8ba0;
+}
+
+@media (max-width: 900px) {
+  .project-card__visual.project-card__visual--document {
+    min-height: 230px;
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-card__visual.project-card__visual--document {
+    min-height: 250px;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .project-document {
+    width: 112px;
+    padding: 42px 17px 17px;
+  }
+}

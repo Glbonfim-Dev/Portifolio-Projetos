@@ -1138,6 +1138,14 @@ button {
   color: currentColor;
 }
 
+.contato-icon--gmail {
+  overflow: visible;
+}
+
+.contato-icon--linkedin {
+  color: #0a66c2;
+}
+
 .contato-link--whatsapp:hover,
 .contato-link--whatsapp:focus-visible {
   border-color: rgba(37, 211, 102, 0.38);

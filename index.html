@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+  <!-- Configurações básicas, descrição do site, fontes e CSS. -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Portfólio de Guilherme Bonfim, profissional de PCP e dados industriais com experiência em planejamento da produção, ERP, Power BI, Excel e indicadores.">
@@ -11,6 +12,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Cabeçalho fixo com marca, menu e atalho para o currículo. -->
   <header class="site-header">
     <div class="container header-shell">
       <a href="#inicio" class="brand-mark" aria-label="Ir para o início">
@@ -33,7 +35,9 @@
     </div>
   </header>
 
+  <!-- Conteúdo principal do portfólio. -->
   <main id="inicio">
+    <!-- Apresentação inicial e atalhos para as seções principais. -->
     <section class="hero-panel" aria-labelledby="hero-title">
       <div class="container hero-grid">
         <div class="hero-copy">
@@ -45,6 +49,7 @@
             <a class="hero-btn hero-btn-secondary" href="./Apresenta%C3%A7%C3%A3o/Curriculo-Guilherme-Bonfim.pdf" target="_blank" rel="noopener">Ver currículo</a>
           </div>
 
+          <!-- Resumo rápido da atuação e das ferramentas utilizadas. -->
           <div class="kpi-strip" aria-label="Resumo profissional">
             <article class="kpi-card">
               <span class="kpi-card__label">Atuação atual</span>
@@ -62,6 +67,7 @@
     </section>
 
     <div class="container main-shell">
+      <!-- Foto, descrição profissional e conhecimentos principais. -->
       <section id="sobre" class="panel-section">
         <div class="section-heading">
           <div>
@@ -91,6 +97,7 @@
         </article>
       </section>
 
+      <!-- Histórico profissional organizado do trabalho mais recente ao mais antigo. -->
       <section id="experiencia" class="panel-section">
         <div class="section-heading">
           <div>
@@ -100,6 +107,7 @@
           <p>Uma trajetória que combina chão de fábrica, controle de processos e análise.</p>
         </div>
 
+        <!-- Cada cartão representa uma experiência profissional. -->
         <div class="experience-timeline">
           <article class="experience-card card experience-card--featured">
             <div class="experience-card__aside">
@@ -186,6 +194,7 @@
         </div>
       </section>
 
+      <!-- Projetos apresentados em um carrossel acessível. -->
       <section id="projetos" class="panel-section">
         <div class="section-heading">
           <div>
@@ -195,10 +204,12 @@
           <p>Projetos voltados à visibilidade da operação, controle de prazos e apoio à decisão.</p>
         </div>
 
+        <!-- O JavaScript controla os slides, as setas, os pontos e o gesto de arrastar. -->
         <div class="projects-carousel" id="projectsCarousel" role="region" aria-roledescription="carrossel" aria-label="Apresentações de projetos">
           <p class="sr-only" id="carouselInstructions">Use as setas para navegar entre os projetos. Pressione Enter para abrir a apresentação selecionada.</p>
           <div class="projects-carousel__viewport">
             <div class="projects-carousel__track">
+          <!-- Projeto 1: dashboard de acompanhamento da produção. -->
           <a class="project-card project-slide project-theme--production card project-card--link" href="./Apresenta%C3%A7%C3%A3o/Dashboard%20Columbia.pdf" target="_blank" rel="noopener" aria-label="Abrir apresentação Dashboard Columbia em uma nova guia" aria-describedby="carouselInstructions">
             <div class="project-card__visual project-card__visual--document" aria-hidden="true">
               <div class="project-document">
@@ -224,6 +235,7 @@
             </div>
           </a>
 
+          <!-- Projeto 2: dashboard de faturamento e consulta GRV. -->
           <a class="project-card project-slide project-theme--billing card project-card--link" href="./Apresenta%C3%A7%C3%A3o/Dashboard-Faturamento-GRV-CMS.pdf" target="_blank" rel="noopener" aria-label="Abrir apresentação Dashboard de Faturamento e Consulta GRV em uma nova guia" aria-describedby="carouselInstructions">
             <div class="project-card__visual project-card__visual--document" aria-hidden="true">
               <div class="project-document">
@@ -249,6 +261,7 @@
             </div>
           </a>
 
+          <!-- Projeto 3: automação RPA para consulta e agrupamento de dados. -->
           <a class="project-card project-slide project-theme--rpa card project-card--link" href="./Apresenta%C3%A7%C3%A3o/RPA-Consulta-Banco-Dados.pdf" target="_blank" rel="noopener" aria-label="Abrir apresentação RPA para consulta no banco de dados em uma nova guia" aria-describedby="carouselInstructions">
             <div class="project-card__visual project-card__visual--document" aria-hidden="true">
               <div class="project-document">
@@ -274,6 +287,7 @@
             </div>
           </a>
 
+          <!-- Projeto 4: agente de IA integrado aos dados do SigmaNEST. -->
           <a class="project-card project-slide project-theme--ai card project-card--link" href="./Apresenta%C3%A7%C3%A3o/Agente-IA-SigmaNEST.pdf" target="_blank" rel="noopener" aria-label="Abrir apresentação Agente de IA com dados do SigmaNEST em uma nova guia" aria-describedby="carouselInstructions">
             <div class="project-card__visual project-card__visual--document" aria-hidden="true">
               <div class="project-document">
@@ -302,6 +316,7 @@
             </div>
           </div>
 
+          <!-- Controles para trocar o projeto exibido. -->
           <div class="projects-carousel__controls">
             <button class="carousel-arrow carousel-arrow--prev" type="button" data-carousel-prev aria-label="Ver projeto anterior">
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
@@ -322,6 +337,7 @@
         </div>
       </section>
 
+      <!-- Informações de contato e formulário que prepara um e-mail. -->
       <section id="contato" class="panel-section">
         <div class="section-heading">
           <div>
@@ -337,6 +353,7 @@
               <div class="contact-kpi"><span>Localização</span><strong>Hortolândia, São Paulo</strong></div>
             </div>
 
+            <!-- Links diretos para os canais de contato. -->
             <div class="contact-list">
               <a href="mailto:glbonfim21@gmail.com" class="contato-item contato-link"><img src="./img/icone-gmail.png" alt="" class="icone"><span>glbonfim21@gmail.com</span></a>
               <a href="https://www.linkedin.com/in/bonfimngks" target="_blank" rel="noopener" class="contato-item contato-link"><img src="./img/icone-linkedin.png" alt="" class="icone"><span>linkedin.com/in/bonfimngks</span></a>
@@ -345,6 +362,7 @@
             </div>
           </div>
 
+          <!-- Formulário validado pelo JavaScript antes de abrir o aplicativo de e-mail. -->
           <div class="contact-panel card">
             <form id="formContato" aria-describedby="resposta" novalidate>
               <label class="sr-only" for="nome">Nome completo</label>
@@ -359,6 +377,7 @@
           </div>
         </div>
 
+        <!-- Janela para revisar a mensagem antes do envio. -->
         <div id="modalPreview" class="modal" aria-hidden="true" role="dialog" aria-labelledby="modalTitle" aria-modal="true">
           <div class="modal__content">
             <h3 id="modalTitle">Revisar mensagem</h3>
@@ -370,10 +389,12 @@
     </div>
   </main>
 
+  <!-- Rodapé com o resumo da área profissional. -->
   <footer class="site-footer">
     <div class="container"><p>Guilherme Bonfim • PCP, dados industriais e melhoria de processos.</p></div>
   </footer>
 
+  <!-- Carrega as interações depois que o conteúdo da página foi criado. -->
   <script src="script.js"></script>
 </body>
 </html>

@@ -1,3 +1,4 @@
+/* Cores, sombras, tamanhos e fontes usados em todo o site. */
 :root {
   --bg: #edf3fb;
   --bg-soft: #f7fafe;
@@ -25,14 +26,17 @@
   --header-height: 88px;
 }
 
+/* Remove espaçamentos inesperados e facilita o cálculo dos tamanhos. */
 * {
   box-sizing: border-box;
 }
 
+/* Ativa a rolagem suave para os links internos. */
 html {
   scroll-behavior: smooth;
 }
 
+/* Aparência geral da página. */
 body {
   margin: 0;
   background:
@@ -54,11 +58,13 @@ img {
   max-width: 100%;
 }
 
+/* Centraliza o conteúdo e limita a largura máxima. */
 .container {
   width: min(1120px, calc(100% - 32px));
   margin: 0 auto;
 }
 
+/* Cabeçalho fixo que permanece visível durante a rolagem. */
 .site-header {
   position: fixed;
   top: 0;
@@ -99,6 +105,7 @@ img {
   font-weight: 700;
 }
 
+/* Menu principal do cabeçalho. */
 .main-nav {
   display: inline-flex;
   align-items: center;
@@ -128,6 +135,7 @@ img {
   outline: none;
 }
 
+/* Área do botão para baixar o currículo. */
 .header-actions {
   display: flex;
   align-items: center;
@@ -165,6 +173,7 @@ main {
   padding-top: var(--header-height);
 }
 
+/* Faixa inicial com título, botões e resumo profissional. */
 .hero-panel {
   position: relative;
   overflow: hidden;
@@ -176,6 +185,7 @@ main {
     linear-gradient(135deg, #0b1530 0%, #123171 52%, #1d4ed8 100%);
 }
 
+/* Formas decorativas do fundo da apresentação. */
 .hero-panel::before,
 .hero-panel::after {
   content: "";
@@ -246,6 +256,7 @@ main {
   text-align: justify;
 }
 
+/* Agrupa os botões de ação da apresentação. */
 .hero-cta {
   display: flex;
   flex-wrap: wrap;
@@ -290,6 +301,7 @@ button {
   background: rgba(255, 255, 255, 0.08);
 }
 
+/* Cartões com o resumo rápido da experiência profissional. */
 .kpi-strip {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -328,6 +340,7 @@ button {
   font-size: 0.88rem;
 }
 
+/* Organiza as seções abaixo da apresentação. */
 .main-shell {
   display: grid;
   gap: 26px;
@@ -338,6 +351,7 @@ button {
   scroll-margin-top: calc(var(--header-height) + 18px);
 }
 
+/* Título e texto de apoio usados no início de cada seção. */
 .section-heading {
   display: flex;
   align-items: end;
@@ -362,6 +376,7 @@ button {
   text-align: right;
 }
 
+/* Aparência comum dos cartões do portfólio. */
 .card {
   position: relative;
   overflow: hidden;
@@ -378,6 +393,7 @@ button {
   box-shadow: 0 28px 50px rgba(21, 52, 120, 0.14);
 }
 
+/* Grade da seção Sobre mim. */
 .about-panel {
   display: grid;
   grid-template-columns: 190px minmax(0, 1fr);
@@ -391,10 +407,12 @@ button {
   justify-content: center;
 }
 
+/* Recorta e enquadra a foto sem distorcer a imagem. */
 .about-photo {
   width: 180px;
   aspect-ratio: 1;
   object-fit: cover;
+  object-position: 50% 70%;
   border-radius: 28px;
   box-shadow: none;
   background: transparent;
@@ -472,6 +490,7 @@ button {
   margin-top: 22px;
 }
 
+/* Lista de conhecimentos exibidos como pequenas etiquetas. */
 .chips {
   display: flex;
   flex-wrap: wrap;
@@ -491,6 +510,7 @@ button {
   font-weight: 700;
 }
 
+/* Grade antiga de projetos, mantida para estilos reutilizáveis. */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -504,6 +524,7 @@ button {
   padding: 22px;
 }
 
+/* Ícones decorativos criados somente com CSS. */
 .project-card__icon {
   position: relative;
   width: 72px;
@@ -595,6 +616,7 @@ button {
   color: var(--text-soft);
 }
 
+/* Etiquetas que mostram tecnologias e etapas de cada projeto. */
 .project-tech,
 .project-flow {
   display: flex;
@@ -638,6 +660,7 @@ button {
   color: rgba(20, 35, 61, 0.35);
 }
 
+/* Área de habilidades, barras de nível e gráfico visual. */
 .skills-layout {
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
@@ -835,6 +858,7 @@ button {
   transform: rotate(45deg);
 }
 
+/* Cartões de competências e seus estados de interação. */
 .competency-showcase {
   display: grid;
   gap: 18px;
@@ -1013,6 +1037,7 @@ button {
   transform: translate(2px, -2px);
 }
 
+/* Divide os contatos e o formulário em duas colunas. */
 .contact-layout {
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
@@ -1051,6 +1076,7 @@ button {
   line-height: 1.45;
 }
 
+/* Lista de e-mail, LinkedIn, GitHub e WhatsApp. */
 .contact-list {
   display: grid;
   gap: 10px;
@@ -1127,6 +1153,7 @@ button {
   color: #25d366;
 }
 
+/* Campos e botões do formulário de contato. */
 form {
   display: grid;
   gap: 12px;
@@ -1214,6 +1241,7 @@ button {
   flex-wrap: wrap;
 }
 
+/* Mensagem mostrada depois da validação do formulário. */
 .response {
   display: block;
   margin-top: 12px;
@@ -1239,6 +1267,7 @@ button {
   border: 1px solid #efd99a;
 }
 
+/* Janela de revisão que cobre a página antes de abrir o e-mail. */
 .modal {
   position: fixed;
   inset: 0;
@@ -1284,6 +1313,7 @@ button {
   margin-top: 20px;
 }
 
+/* Rodapé do site. */
 .site-footer {
   padding: 0 0 30px;
 }
@@ -1302,6 +1332,7 @@ button {
   text-align: center;
 }
 
+/* Animação usada quando uma seção entra na área visível. */
 .reveal {
   opacity: 0;
   transform: translateY(18px);
@@ -1313,6 +1344,7 @@ button {
   transform: translateY(0);
 }
 
+/* Estados visuais de ajuda, erro, sucesso e carregamento. */
 .field-hint {
   margin: -2px 0 2px;
   color: var(--text-soft);
@@ -1346,6 +1378,7 @@ button {
   cursor: wait;
 }
 
+/* Ajustes para notebooks e telas menores. */
 @media (max-width: 1080px) {
   .skills-layout,
   .contact-layout {
@@ -1368,6 +1401,7 @@ button {
   }
 }
 
+/* Transforma grades maiores em uma única coluna. */
 @media (max-width: 860px) {
   :root {
     --header-height: 128px;
@@ -1419,6 +1453,7 @@ button {
   }
 }
 
+/* Ajustes gerais para celulares. */
 @media (max-width: 640px) {
   :root {
     --header-height: 170px;
@@ -1488,6 +1523,7 @@ button {
 
 /* Posicionamento PCP + Dados Industriais */
 
+/* Esconde textos visualmente, mas mantém a leitura por tecnologias assistivas. */
 .sr-only {
   position: absolute;
   width: 1px;
@@ -1536,6 +1572,7 @@ button {
   max-height: 620px;
 }
 
+/* Linha do tempo com todas as experiências profissionais. */
 .experience-timeline {
   position: relative;
   display: grid;
@@ -1552,6 +1589,7 @@ button {
   background: linear-gradient(180deg, var(--primary), rgba(6, 182, 212, 0.2));
 }
 
+/* Cada cartão apresenta uma empresa, período, cargo e atividades. */
 .experience-card {
   display: grid;
   grid-template-columns: 170px minmax(0, 1fr);
@@ -1635,6 +1673,7 @@ button {
   color: var(--primary);
 }
 
+/* Etiquetas com os conhecimentos usados em cada experiência. */
 .experience-tags {
   display: flex;
   flex-wrap: wrap;
@@ -1655,6 +1694,7 @@ button {
   font-weight: 700;
 }
 
+/* Variações dos cartões de projeto e links para os PDFs. */
 .project-card--featured {
   grid-column: 1 / -1;
 }
@@ -1705,6 +1745,7 @@ button {
   color: #ffffff;
 }
 
+/* Pequenos dados que reforçam o resultado de cada projeto. */
 .project-proof {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1790,6 +1831,7 @@ button {
   font-size: 0.88rem;
 }
 
+/* Grade de evidências práticas das habilidades apresentadas. */
 .skills-evidence-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1819,6 +1861,7 @@ button {
   margin-top: -7px;
 }
 
+/* Ajustes desta seção para tablets. */
 @media (max-width: 980px) {
   .main-nav a {
     padding-inline: 12px;
@@ -1836,6 +1879,7 @@ button {
   }
 }
 
+/* Empilha a linha do tempo em telas médias. */
 @media (max-width: 860px) {
   :root {
     --header-height: 158px;
@@ -1864,6 +1908,7 @@ button {
   }
 }
 
+/* Reduz espaços e tamanhos em celulares. */
 @media (max-width: 640px) {
   :root {
     --header-height: 204px;
@@ -1886,6 +1931,7 @@ button {
   }
 }
 
+/* Remove movimentos para quem ativou a opção de reduzir animações. */
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -1910,6 +1956,7 @@ button {
   margin-top: 0;
 }
 
+/* Versão compacta usada atualmente na seção Sobre mim. */
 .about-panel--refined {
   grid-template-columns: 150px minmax(0, 1fr);
   align-items: center;
@@ -1949,6 +1996,7 @@ button {
   padding-inline: 13px;
 }
 
+/* Empilha foto e texto da seção Sobre mim no celular. */
 @media (max-width: 680px) {
   .about-panel--refined {
     grid-template-columns: 1fr;
@@ -1973,6 +2021,7 @@ button {
 
 /* Carrossel de projetos */
 
+/* Área que limita a visualização a um projeto por vez. */
 .projects-carousel {
   position: relative;
 }
@@ -1984,6 +2033,7 @@ button {
   touch-action: pan-y;
 }
 
+/* Faixa horizontal movida pelo JavaScript. */
 .projects-carousel__track {
   display: flex;
   align-items: stretch;
@@ -1991,6 +2041,7 @@ button {
   will-change: transform;
 }
 
+/* Cada projeto ocupa toda a largura disponível no carrossel. */
 .project-slide {
   flex: 0 0 100%;
   min-width: 0;
@@ -2013,6 +2064,7 @@ button {
   padding-top: 16px;
 }
 
+/* Ilustração visual exibida ao lado das informações do projeto. */
 .project-card__visual {
   position: relative;
   isolation: isolate;
@@ -2171,6 +2223,7 @@ button {
 .project-visual__pulse i:nth-child(2) { width: 72px; height: 72px; }
 .project-visual__pulse i:nth-child(3) { width: 104px; height: 104px; }
 
+/* Setas, contador e pontos de navegação do carrossel. */
 .projects-carousel__controls {
   display: flex;
   align-items: center;
@@ -2256,6 +2309,7 @@ button {
   background: var(--primary);
 }
 
+/* Reorganiza os projetos em telas de tablet. */
 @media (max-width: 900px) {
   .project-slide {
     grid-template-columns: 1fr;
@@ -2271,6 +2325,7 @@ button {
   }
 }
 
+/* Simplifica os controles e o conteúdo em celulares. */
 @media (max-width: 640px) {
   .project-slide {
     gap: 18px;
@@ -2298,6 +2353,7 @@ button {
 
 /* Aparência limpa e profissional para o carrossel */
 
+/* Cada tema define a cor principal e o fundo de um projeto. */
 .project-theme--production {
   --project-accent: #2563eb;
   --project-soft: #f3f7fd;
@@ -2318,6 +2374,7 @@ button {
   --project-soft: #f2f6f9;
 }
 
+/* Refinamento final da aparência dos cartões do carrossel. */
 .project-slide {
   min-height: 370px;
   grid-template-columns: minmax(200px, 240px) minmax(0, 1fr);
@@ -2437,6 +2494,7 @@ button {
   box-shadow: 0 10px 24px rgba(21, 52, 120, 0.12);
 }
 
+/* Ajusta o refinamento do carrossel em telas menores. */
 @media (max-width: 900px) {
   .project-slide {
     grid-template-columns: 1fr;
@@ -2453,6 +2511,7 @@ button {
 
 /* Miniatura simples das apresentações */
 
+/* Desenha uma folha de PDF usando apenas elementos HTML e CSS. */
 .project-card__visual.project-card__visual--document {
   display: flex;
   min-height: 100%;
@@ -2526,6 +2585,7 @@ button {
   letter-spacing: 0.04em;
 }
 
+/* Nome do documento e quantidade de páginas. */
 .project-document__meta {
   display: grid;
   justify-items: center;
@@ -2552,6 +2612,7 @@ button {
   border-color: #7f8ba0;
 }
 
+/* Diminui a miniatura do documento em tablets. */
 @media (max-width: 900px) {
   .project-card__visual.project-card__visual--document {
     min-height: 230px;
@@ -2559,6 +2620,7 @@ button {
   }
 }
 
+/* Ajuste final da miniatura para celulares pequenos. */
 @media (max-width: 480px) {
   .project-card__visual.project-card__visual--document {
     min-height: 250px;

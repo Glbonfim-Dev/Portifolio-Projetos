@@ -264,145 +264,57 @@
         </div>
       </section>
 
-      <!-- Projetos apresentados em um carrossel acessível. -->
-      <section id="projetos" class="panel-section">
-        <div class="section-heading">
-          <div>
-            <span class="section-kicker">Projetos e cases</span>
-            <h2>Dados aplicados à rotina industrial</h2>
-          </div>
-          <p>Projetos voltados à visibilidade da operação, controle de prazos e apoio à decisão.</p>
+      <section id="projetos" class="panel-section" aria-labelledby="projects-title">
+        <div class="ecosystem-heading">
+          <span class="section-kicker">Projetos e cases</span>
+          <h2 id="projects-title">Um ecossistema de soluções para o PCP.</h2>
+          <p>Cinco projetos, uma apresentação.</p>
         </div>
 
-        <!-- O JavaScript controla os slides, as setas, os pontos e o gesto de arrastar. -->
-        <div class="projects-carousel" id="projectsCarousel" role="region" aria-roledescription="carrossel" aria-label="Apresentações de projetos">
-          <p class="sr-only" id="carouselInstructions">Use as setas para navegar entre os projetos. Pressione Enter para abrir a apresentação selecionada.</p>
-          <div class="projects-carousel__viewport">
-            <div class="projects-carousel__track">
-          <!-- Projeto 1: dashboard de acompanhamento da produção. -->
-          <a class="project-card project-slide project-theme--production card project-card--link" href="./Apresenta%C3%A7%C3%A3o/Dashboard%20Columbia.pdf" target="_blank" rel="noopener" aria-label="Abrir apresentação Dashboard Columbia em uma nova guia" aria-describedby="carouselInstructions">
-            <div class="project-card__visual project-card__visual--document" aria-hidden="true">
-              <div class="project-document">
-                <span class="project-document__line project-document__line--long"></span>
-                <span class="project-document__line"></span>
-                <span class="project-document__line project-document__line--short"></span>
-                <strong class="project-document__badge">PDF</strong>
-              </div>
-              <div class="project-document__meta">
-                <strong>Dashboard Columbia</strong>
-                <span>Apresentação · 6 páginas</span>
-              </div>
-            </div>
-            <div class="project-card__body">
-              <div class="project-card__topline">
-                <span class="project-tag">Apresentação • 6 páginas</span>
-                <span class="project-open">Abrir apresentação <span aria-hidden="true">↗</span></span>
-              </div>
-              <h3>Dashboard de Acompanhamento da Produção</h3>
-              <p>Apresentação de uma solução que transforma dados em uma visão rápida da produção. O material mostra o fluxo da API ao dashboard e o acompanhamento de produção, eficiência, OEE, paradas, linhas e status.</p>
-              <div class="project-flow" aria-label="Fluxo da solução"><span>JSON</span><span>API</span><span>Dashboard</span><span>Decisão</span></div>
-              <div class="project-tech"><span>IA</span><span>JSON</span><span>API</span><span>Dashboard Web</span></div>
-            </div>
-          </a>
+        <div class="ecosystem-panel">
+          <ol class="ecosystem-grid" aria-label="Soluções para a digitalização do PCP">
+            <li class="ecosystem-item">
+              <span class="ecosystem-number" aria-hidden="true">01</span>
+              <svg class="ecosystem-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 24 24-13 24 13-24 13Z"/><path d="m8 34 24 13 24-13M8 44l24 13 24-13"/><path d="m24 23 8-4 8 4-8 5Z"/></svg>
+              <h3>Agente de<br>Nesting</h3>
+              <span class="ecosystem-phase">Entrada de dados</span>
+              <span class="ecosystem-arrow" aria-hidden="true">→</span>
+            </li>
+            <li class="ecosystem-item">
+              <span class="ecosystem-number" aria-hidden="true">02</span>
+              <svg class="ecosystem-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M34 8H14v48h20M22 20h16M22 29h10M22 38h6"/><circle cx="44" cy="43" r="13"/><path d="m38 43 4 4 8-9"/></svg>
+              <h3>Apontamento<br>Agrupado</h3>
+              <span class="ecosystem-phase">Execução</span>
+              <span class="ecosystem-arrow" aria-hidden="true">→</span>
+            </li>
+            <li class="ecosystem-item">
+              <span class="ecosystem-number" aria-hidden="true">03</span>
+              <svg class="ecosystem-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 8v17h20V8M28 25v10h8V25M32 35v7M11 49h42l5 8H6Z"/><path d="m41 37 4-4m1 11h6"/></svg>
+              <h3>Carga<br>Máquina</h3>
+              <span class="ecosystem-phase">Programação</span>
+              <span class="ecosystem-arrow" aria-hidden="true">→</span>
+            </li>
+            <li class="ecosystem-item">
+              <span class="ecosystem-number" aria-hidden="true">04</span>
+              <svg class="ecosystem-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8h7v49h-7ZM45 8h7v49h-7ZM19 15h26M19 29h26M19 43h26M19 54h26"/><path d="M25 15v-5h14v5M25 29v-7h14v7M25 43v-7h14v7"/></svg>
+              <h3>Painel de<br>Montagem</h3>
+              <span class="ecosystem-phase">Acompanhamento</span>
+              <span class="ecosystem-arrow" aria-hidden="true">→</span>
+            </li>
+            <li class="ecosystem-item">
+              <span class="ecosystem-number" aria-hidden="true">05</span>
+              <svg class="ecosystem-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="35" width="10" height="22" rx="2"/><rect x="27" y="23" width="10" height="34" rx="2"/><rect x="45" y="9" width="10" height="48" rx="2"/></svg>
+              <h3>Dashboard<br>Gerencial</h3>
+              <span class="ecosystem-phase">Gestão</span>
+            </li>
+          </ol>
 
-          <!-- Projeto 2: dashboard de faturamento e consulta GRV. -->
-          <a class="project-card project-slide project-theme--billing card project-card--link" href="./Apresenta%C3%A7%C3%A3o/Dashboard-Faturamento-GRV-CMS.pdf" target="_blank" rel="noopener" aria-label="Abrir apresentação Dashboard de Faturamento e Consulta GRV em uma nova guia" aria-describedby="carouselInstructions">
-            <div class="project-card__visual project-card__visual--document" aria-hidden="true">
-              <div class="project-document">
-                <span class="project-document__line project-document__line--long"></span>
-                <span class="project-document__line"></span>
-                <span class="project-document__line project-document__line--short"></span>
-                <strong class="project-document__badge">PDF</strong>
-              </div>
-              <div class="project-document__meta">
-                <strong>Faturamento GRV</strong>
-                <span>Apresentação · 9 páginas</span>
-              </div>
+          <div class="ecosystem-footer">
+            <p class="ecosystem-tools">ERP <span aria-hidden="true">·</span> SigmaNEST <span aria-hidden="true">·</span> Excel <span aria-hidden="true">·</span> IA</p>
+            <div class="ecosystem-actions">
+              <a class="ecosystem-link" href="./Apresenta%C3%A7%C3%A3o/Digitaliza%C3%A7%C3%A3o%20do%20PCP.pdf" target="_blank" rel="noopener" aria-label="Explorar apresentação completa: Digitalização do PCP, PDF de 11 páginas (abre em nova guia)">Explorar apresentação completa <span aria-hidden="true">↗</span></a>
+              <span class="ecosystem-meta">PDF · 11 páginas</span>
             </div>
-            <div class="project-card__body">
-              <div class="project-card__topline">
-                <span class="project-tag">Apresentação • 9 páginas</span>
-                <span class="project-open">Abrir apresentação <span aria-hidden="true">↗</span></span>
-              </div>
-              <h3>Dashboard de Faturamento — Consulta GRV | Setor CMS</h3>
-              <p>Painel que centraliza orçamentos, valores faturados e pendentes em uma visão rápida. A consulta utiliza filtros por cliente, mês, orçamento e status para apoiar o acompanhamento e a decisão.</p>
-              <div class="project-flow" aria-label="Fluxo da solução"><span>Dashboard</span><span>API</span><span>Banco de dados</span></div>
-              <div class="project-tech"><span>Dashboard Web</span><span>API</span><span>Banco de Dados</span><span>GRV</span></div>
-            </div>
-          </a>
-
-          <!-- Projeto 3: automação RPA para consulta e agrupamento de dados. -->
-          <a class="project-card project-slide project-theme--rpa card project-card--link" href="./Apresenta%C3%A7%C3%A3o/RPA-Consulta-Banco-Dados.pdf" target="_blank" rel="noopener" aria-label="Abrir apresentação RPA para consulta no banco de dados em uma nova guia" aria-describedby="carouselInstructions">
-            <div class="project-card__visual project-card__visual--document" aria-hidden="true">
-              <div class="project-document">
-                <span class="project-document__line project-document__line--long"></span>
-                <span class="project-document__line"></span>
-                <span class="project-document__line project-document__line--short"></span>
-                <strong class="project-document__badge">PDF</strong>
-              </div>
-              <div class="project-document__meta">
-                <strong>RPA · Consulta</strong>
-                <span>Apresentação · 9 páginas</span>
-              </div>
-            </div>
-            <div class="project-card__body">
-              <div class="project-card__topline">
-                <span class="project-tag">Apresentação • 9 páginas</span>
-                <span class="project-open">Abrir apresentação <span aria-hidden="true">↗</span></span>
-              </div>
-              <h3>RPA — Consulta e Agrupamento de Dados</h3>
-              <p>Automação para consulta segura, filtragem e agrupamento de dados. A solução permite simular a operação antes da execução, validar o agrupamento e preencher a transação GRV M83 com confirmação.</p>
-              <div class="project-flow" aria-label="Fluxo da automação"><span>Banco CPS</span><span>Filtros</span><span>Seleção</span><span>GRV M83</span></div>
-              <div class="project-tech"><span>RPA</span><span>Banco de Dados</span><span>GRV M83</span><span>Dry-run</span></div>
-            </div>
-          </a>
-
-          <!-- Projeto 4: agente de IA integrado aos dados do SigmaNEST. -->
-          <a class="project-card project-slide project-theme--ai card project-card--link" href="./Apresenta%C3%A7%C3%A3o/Agente-IA-SigmaNEST.pdf" target="_blank" rel="noopener" aria-label="Abrir apresentação Agente de IA com dados do SigmaNEST em uma nova guia" aria-describedby="carouselInstructions">
-            <div class="project-card__visual project-card__visual--document" aria-hidden="true">
-              <div class="project-document">
-                <span class="project-document__line project-document__line--long"></span>
-                <span class="project-document__line"></span>
-                <span class="project-document__line project-document__line--short"></span>
-                <strong class="project-document__badge">PDF</strong>
-              </div>
-              <div class="project-document__meta">
-                <strong>Agente IA · SigmaNEST</strong>
-                <span>Apresentação · 6 páginas</span>
-              </div>
-            </div>
-            <div class="project-card__body">
-              <div class="project-card__topline">
-                <span class="project-tag">Apresentação • 6 páginas</span>
-                <span class="project-open">Abrir apresentação <span aria-hidden="true">↗</span></span>
-              </div>
-              <h3>Agente de IA + Extração de Dados do SigmaNEST</h3>
-              <p>Proposta de agente inteligente para capturar, organizar e responder perguntas sobre dados do SigmaNEST. A solução transforma arquivos dispersos em informações úteis sobre produção, perdas, aproveitamento e performance.</p>
-              <div class="project-flow" aria-label="Fluxo do agente de IA"><span>Extrair</span><span>Tratar</span><span>Analisar</span><span>Agir</span></div>
-              <div class="project-tech"><span>IA</span><span>SigmaNEST</span><span>XLSX/CSV</span><span>Automação</span></div>
-            </div>
-          </a>
-
-            </div>
-          </div>
-
-          <!-- Controles para trocar o projeto exibido. -->
-          <div class="projects-carousel__controls">
-            <button class="carousel-arrow carousel-arrow--prev" type="button" data-carousel-prev aria-label="Ver projeto anterior">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
-            </button>
-            <div class="carousel-navigation">
-              <span class="carousel-status" aria-live="polite"><strong data-carousel-current>1</strong> / 4</span>
-              <div class="carousel-dots" aria-label="Selecionar projeto">
-                <button type="button" class="carousel-dot is-active" data-carousel-dot="0" aria-label="Ir para Dashboard Columbia" aria-current="true"></button>
-                <button type="button" class="carousel-dot" data-carousel-dot="1" aria-label="Ir para Dashboard de Faturamento"></button>
-                <button type="button" class="carousel-dot" data-carousel-dot="2" aria-label="Ir para RPA de Consulta"></button>
-                <button type="button" class="carousel-dot" data-carousel-dot="3" aria-label="Ir para Agente de IA"></button>
-              </div>
-            </div>
-            <button class="carousel-arrow carousel-arrow--next" type="button" data-carousel-next aria-label="Ver próximo projeto">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
-            </button>
           </div>
         </div>
       </section>
